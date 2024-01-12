@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+    <script src="/maplibre-gl-inspect.js"></script>
+    <link
+      href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/@maplibre/maplibre-gl-geocoder@1.2.0/dist/maplibre-gl-geocoder.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@maplibre/maplibre-gl-geocoder@1.2.0/dist/maplibre-gl-geocoder.css"
+      type="text/css"
+    />
+
+    <link href="/maplibre-gl-inspect.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+
+      #map {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+      }
+
+      [type="color"] {
+        position: fixed;
+        bottom: 8px;
+        right: 8px;
+        width: 80px;
+      }
+
+      .download-selected {
+        position: fixed;
+        bottom: 8px;
+        left: 8px;
+        color: white;
+        background-color: darkslategray;
+        -webkit-appearance: none;
+        appearance: none;
+        padding: 4px 8px;
+        border-radius: 2px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+    </style>
+    <title>Sloy.io</title>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      // Initialize the map
+      let map = new maplibregl.Map({
+        container: "map",
+        style: "/tallinn/style.json",
+        minZoom: 11,
+        maxZoom: 20,
+        hash: true,
+        pitch: 60,
+        center: [-9.160255637252705, 38.70804980040226],
+        zoom: 15,
+      });
+
+      const viewbox =
+        "-9.288032941985877, 38.625722190167544, -9.032478332519533, 38.79037741063698";
+
+      var geocoder_api = {
+        forwardGeocode: async (config) => {
+          const features = [];
+          try {
+            let request =
+              "https://nominatim.openstreetmap.org/search?q=" +
+              config.query +
+              "&format=geojson&polygon_geojson=1&addressdetails=1" +
+              `&viewbox=${encodeURIComponent(viewbox)}&bounded=1`;
+            const response = await fetch(request);
+            const geojson = await response.json();
+            for (let feature of geojson.features) {
+              if (feature.properties?.category !== "building") {
+                continue;
+              }
+
+              let center = [
+                feature.bbox[0] + (feature.bbox[2] - feature.bbox[0]) / 2,
+                feature.bbox[1] + (feature.bbox[3] - feature.bbox[1]) / 2,
+              ];
+              let point = {
+                type: "Feature",
+                geometry: {
+                  type: "Point",
+                  coordinates: center,
+                },
+                place_name: feature.properties.display_name,
+                properties: feature.properties,
+                text: feature.properties.display_name,
+                place_type: ["place"],
+                center: center,
+              };
+              features.push(point);
+            }
+          } catch (e) {
+            console.error(`Failed to forwardGeocode with error: ${e}`);
+          }
+
+          return {
+            features: features,
+          };
+        },
+      };
+      map.addControl(
+        new MaplibreGeocoder(geocoder_api, {
+          maplibregl: maplibregl,
+          language: "en",
+          placeholder: "Otsing",
+        })
+      );
+
+      // Add the navigation control to the map
+      map.addControl(new maplibregl.NavigationControl());
+
+      // Add the inspect control to the map
+      map.addControl(
+        new MaplibreInspect({
+          showMapPopup: true,
+          showMapPopupOnHover: false,
+          showInspectMapPopupOnHover: false,
+          popup: new maplibregl.Popup({
+            closeButton: true,
+            closeOnClick: true,
+          }),
+        })
+      );
+    </script>
+  </body>
+</html>

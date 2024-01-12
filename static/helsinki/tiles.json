@@ -1,0 +1,28 @@
+{
+  "tilejson": "2.2.0",
+  "tiles": ["https://sloy.io/helsinki/tiles/{z}/{x}/{y}.mvt?v=1"],
+  "minzoom": 10,
+  "maxzoom": 16,
+  "bounds": [
+    24.8229647311382, 60.12064508551179, 25.075950622558597, 60.249418152512085
+  ],
+  "center": [24.94205, 60.17059, 15],
+  "vector_layers": [
+    { "id": "aerialway" },
+    { "id": "aeroway" },
+    { "id": "amenity" },
+    { "id": "attraction" },
+    { "id": "barrier" },
+    { "id": "building" },
+    { "id": "highway" },
+    { "id": "landuse" },
+    { "id": "leisure" },
+    { "id": "man_made" },
+    { "id": "natural" },
+    { "id": "point" },
+    { "id": "power" },
+    { "id": "railway" },
+    { "id": "route" },
+    { "id": "waterway" }
+  ]
+}
