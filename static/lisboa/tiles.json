@@ -1,0 +1,29 @@
+{
+  "tilejson": "2.2.0",
+  "tiles": ["https://sloy.io/lisboa/tiles/{z}/{x}/{y}.mvt?v=1"],
+  "minzoom": 10,
+  "maxzoom": 16,
+  "bounds": [
+    -9.288032941985877, 38.625722190167544, -9.032478332519533,
+    38.79037741063698
+  ],
+  "center": [-9.160255637252705, 38.70804980040226, 15],
+  "vector_layers": [
+    { "id": "aerialway" },
+    { "id": "aeroway" },
+    { "id": "amenity" },
+    { "id": "attraction" },
+    { "id": "barrier" },
+    { "id": "building" },
+    { "id": "highway" },
+    { "id": "landuse" },
+    { "id": "leisure" },
+    { "id": "man_made" },
+    { "id": "natural" },
+    { "id": "point" },
+    { "id": "power" },
+    { "id": "railway" },
+    { "id": "route" },
+    { "id": "waterway" }
+  ]
+}
