@@ -4,7 +4,7 @@
   "sources": {
     "baremaps": {
       "type": "vector",
-      "url": "https://sloy.io/armenia/armenia/tiles2.json"
+      "url": "https://sloy.io/armenia/tiles2.json"
     }
   },
   "sprite": "https://baremaps.apache.org/sprites/osm/sprite",
