@@ -510,7 +510,7 @@
           ["==", ["get", "natural"], "beach"],
           "rgb(30, 45, 50)",
           ["==", ["get", "natural"], "sand"],
-          "rgb(240, 229, 196)",
+          "rgb(30, 45, 50)",
           [
             "all",
             ["==", ["get", "natural"], "water"],
@@ -640,7 +640,7 @@
           ["==", ["get", "leisure"], "fitness_station"],
           "rgb(27, 61, 55)",
           ["==", ["get", "leisure"], "miniature_golf"],
-          "rgb(181, 226, 181)",
+          "rgb(27, 61, 55)",
           ["==", ["get", "leisure"], "ice_rink"],
           "rgb(221, 236, 236)",
           ["==", ["get", "leisure"], "dog_park"],
@@ -2398,7 +2398,7 @@
               ["!=", ["get", "bicycle"], "designated"]
             ]
           ],
-          "rgb(22, 25, 28)",
+          "rgb(0, 0, 0)",
           ["all", ["==", ["get", "highway"], "track"]],
           "rgb(0, 0, 0)",
           [
@@ -2438,7 +2438,7 @@
           ["==", ["get", "highway"], "living_street"],
           "rgba(245, 245, 245, 1)",
           ["==", ["get", "highway"], "service"],
-          "rgb(22, 25, 28)",
+          "rgb(0, 0, 0)",
           [
             "all",
             ["==", ["get", "highway"], "pedestrian"],
@@ -15210,7 +15210,7 @@
             ["==", ["get", "highway"], "pedestrian"],
             ["!=", ["get", "area"], "yes"]
           ],
-          "rgb(22, 25, 28)",
+          "rgb(0, 0, 0)",
           ["==", ["get", "highway"], "bridleway"],
           "rgb(68, 159, 66)",
           ["==", ["get", "highway"], "busway"],
@@ -15243,7 +15243,7 @@
               ["!=", ["get", "bicycle"], "designated"]
             ]
           ],
-          "rgb(22, 25, 28)",
+          "rgb(0, 0, 0)",
           ["all", ["==", ["get", "highway"], "track"]],
           "rgb(0, 0, 0)",
           [
@@ -15279,15 +15279,15 @@
           ["==", ["get", "highway"], "unclassified"],
           "rgb(0, 0, 0)",
           ["==", ["get", "highway"], "residential"],
-          "rgb(22, 25, 28)",
+          "rgb(0, 0, 0)",
           ["==", ["get", "highway"], "living_street"],
-          "rgb(213, 213, 213)",
+          "rgb(0, 0, 0)",
           ["==", ["get", "highway"], "service"],
           "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "track"],
-          "rgb(159, 126, 57)",
+          "rgb(0, 0, 0)",
           ["==", ["get", "highway"], "raceway"],
-          "rgb(255, 147, 166)",
+          "rgb(0, 0, 0)",
           [
             "all",
             ["==", ["get", "highway"], "pedestrian"],
