@@ -20,7 +20,7 @@
       "minzoom": 0,
       "maxzoom": 24,
       "layout": { "visibility": "visible" },
-      "paint": { "background-color": "rgba(22, 38, 57, 1)" }
+      "paint": { "background-color": "rgba(15, 30, 55, 1)" }
     },
     {
       "id": "power_plant",
@@ -53,7 +53,7 @@
         "fill-color": [
           "case",
           ["==", ["geometry-type"], "Polygon"],
-          "rgba(213, 213, 220, 1.0)",
+          "rgba(30, 40, 70, 1.0)",
           "rgba(0, 0, 0, 0)"
         ],
         "fill-antialias": true
@@ -160,43 +160,43 @@
           ["==", ["get", "landuse"], "religious"],
           "rgb(20, 55, 70)",
           ["==", ["get", "landuse"], "recreation_ground"],
-          "rgb(24, 46, 64)",
+          "rgb(13, 32, 52)",
           ["==", ["get", "landuse"], "railway"],
-          "rgb(40, 60, 80)",
+          "rgb(25, 45, 65)",
           ["==", ["get", "landuse"], "quarry"],
-          "rgb(21, 55, 49)",
+          "rgb(16, 50, 44)",
           ["==", ["get", "landuse"], "plant_nursery"],
-          "rgb(174, 223, 162)",
+          "rgb(16, 50, 44)",
           ["==", ["get", "landuse"], "military"],
-          "rgb(29, 45, 59)",
+          "rgb(24, 40, 54)",
           ["==", ["get", "landuse"], "landfill"],
-          "rgb(21, 55, 49)",
+          "rgb(16, 50, 44)",
           ["==", ["get", "landuse"], "greenfield"],
-          "rgb(21, 55, 49)",
+          "rgb(16, 50, 44)",
           ["==", ["get", "landuse"], "garages"],
-          "rgb(24, 46, 64)",
+          "rgb(13, 32, 52)",
           ["==", ["get", "landuse"], "cemetery"],
-          "rgb(21, 55, 49)",
+          "rgb(16, 50, 44)",
           ["==", ["get", "landuse"], "brownfield"],
-          "rgb(29, 50, 68)",
+          "rgb(16, 37, 55)",
           ["==", ["get", "landuse"], "basin"],
           "rgb(170, 211, 223)",
           ["==", ["get", "landuse"], "vineyard"],
-          "rgb(21, 55, 49)",
+          "rgb(16, 50, 44)",
           ["==", ["get", "landuse"], "farmyard"],
-          "rgb(238, 213, 179)",
+          "rgb(16, 37, 55)",
           ["==", ["get", "landuse"], "farmland"],
-          "rgb(29, 50, 68)",
+          "rgb(16, 37, 55)",
           ["==", ["get", "landuse"], "allotments"],
-          "rgb(29, 50, 68)",
+          "rgb(16, 37, 55)",
           ["==", ["get", "landuse"], "retail"],
-          "rgb(25, 50, 70)",
+          "rgb(20, 45, 65)",
           ["==", ["get", "landuse"], "industrial"],
-          "rgb(35, 55, 75)",
+          "rgb(20, 40, 60)",
           ["==", ["get", "landuse"], "residential"],
-          "rgb(24, 46, 64)",
+          "rgb(13, 32, 52)",
           ["==", ["get", "landuse"], "construction"],
-          "rgb(40, 60, 80)",
+          "rgb(25, 45, 65)",
           ["==", ["get", "landuse"], "commercial"],
           "rgb(242, 216, 217)",
           ["==", ["get", "landuse"], "pedestrian"],
@@ -243,11 +243,11 @@
           ["==", ["get", "leisure"], "golf_course"],
           "rgb(221, 246, 192)",
           ["==", ["get", "leisure"], "sports_centre"],
-          "rgb(41, 75, 69)",
+          "rgb(36, 70, 64)",
           ["==", ["get", "leisure"], "garden"],
-          "rgb(41, 75, 69)",
+          "rgb(36, 70, 64)",
           ["==", ["get", "leisure"], "park"],
-          "rgb(31, 65, 59)",
+          "rgb(27, 61, 55)",
           "rgba(0, 0, 0, 0)"
         ],
         "fill-antialias": false
@@ -294,15 +294,15 @@
         "fill-color": [
           "case",
           ["==", ["get", "amenity"], "kindergarten"],
-          "rgb(24, 46, 64)",
+          "rgb(13, 32, 52)",
           ["==", ["get", "amenity"], "school"],
-          "rgb(24, 46, 64)",
+          "rgb(13, 32, 52)",
           ["==", ["get", "amenity"], "college"],
-          "rgb(24, 46, 64)",
+          "rgb(13, 32, 52)",
           ["==", ["get", "amenity"], "university"],
-          "rgb(24, 46, 64)",
+          "rgb(13, 32, 52)",
           ["==", ["get", "amenity"], "hospital"],
-          "rgb(55, 40, 55)",
+          "rgb(45, 30, 45)",
           ["==", ["get", "amenity"], "grave_yard"],
           "rgb(170, 203, 175)",
           "rgba(0, 0, 0, 0)"
@@ -372,15 +372,15 @@
           ["==", ["get", "natural"], "wood"],
           "rgb(22, 56, 56)",
           ["==", ["get", "natural"], "scrub"],
-          "rgb(31, 65, 59)",
+          "rgb(27, 61, 55)",
           ["==", ["get", "natural"], "heath"],
           "rgb(21, 31, 41)",
           ["==", ["get", "natural"], "grassland"],
-          "rgb(41, 75, 69)",
+          "rgb(36, 70, 64)",
           ["==", ["get", "natural"], "bare_rock"],
           "rgb(32, 46, 66)",
           ["==", ["get", "natural"], "scree"],
-          "rgb(29, 45, 59)",
+          "rgb(24, 40, 54)",
           ["==", ["get", "natural"], "shingle"],
           "rgb(232, 223, 216)",
           [
@@ -388,7 +388,7 @@
             ["==", ["get", "natural"], "water"],
             ["==", ["get", "water"], "lake"]
           ],
-          "rgb(4, 19, 38)",
+          "rgb(0, 14, 34)",
           "rgba(0, 0, 0, 0)"
         ],
         "fill-antialias": false
@@ -432,15 +432,15 @@
         "fill-color": [
           "case",
           ["==", ["get", "landuse"], "forest"],
-          "rgb(31, 65, 59)",
+          "rgb(27, 61, 55)",
           ["==", ["get", "landuse"], "grass"],
-          "rgb(21, 55, 49)",
+          "rgb(16, 50, 44)",
           ["==", ["get", "landuse"], "greenhouse_horticulture"],
-          "rgb(41, 75, 69)",
+          "rgb(36, 70, 64)",
           ["==", ["get", "landuse"], "orchard"],
-          "rgb(21, 55, 49)",
+          "rgb(16, 50, 44)",
           ["==", ["get", "landuse"], "meadow"],
-          "rgb(21, 55, 49)",
+          "rgb(16, 50, 44)",
           "rgba(0, 0, 0, 0)"
         ],
         "fill-antialias": false
@@ -516,7 +516,7 @@
             ["==", ["get", "natural"], "water"],
             ["!=", ["get", "water"], "lake"]
           ],
-          "rgb(4, 19, 38)",
+          "rgb(0, 15, 34)",
           "rgba(0, 0, 0, 0)"
         ],
         "fill-antialias": false
@@ -565,7 +565,7 @@
             ["!=", ["get", "layer"], "-1"],
             ["==", ["get", "amenity"], "parking"]
           ],
-          "rgb(24, 46, 64)",
+          "rgb(13, 32, 52)",
           "rgba(0, 0, 0, 0)"
         ],
         "fill-outline-color": [
@@ -638,21 +638,21 @@
           ["==", ["get", "leisure"], "swimming_pool"],
           "rgb(40, 100, 150)",
           ["==", ["get", "leisure"], "fitness_station"],
-          "rgb(31, 65, 59)",
+          "rgb(27, 61, 55)",
           ["==", ["get", "leisure"], "miniature_golf"],
           "rgb(181, 226, 181)",
           ["==", ["get", "leisure"], "ice_rink"],
           "rgb(221, 236, 236)",
           ["==", ["get", "leisure"], "dog_park"],
-          "rgb(224, 252, 227)",
+          "rgb(13, 32, 52)",
           ["==", ["get", "leisure"], "playground"],
-          "rgb(24, 46, 64)",
+          "rgb(13, 32, 52)",
           ["==", ["get", "leisure"], "pitch"],
-          "rgb(41, 75, 69)",
+          "rgb(36, 70, 64)",
           ["==", ["get", "leisure"], "track"],
           "rgb(61, 95, 89)",
           ["==", ["get", "leisure"], "stadium"],
-          "rgb(41, 75, 69)",
+          "rgb(36, 70, 64)",
           "rgba(0, 0, 0, 0)"
         ],
         "fill-outline-color": [
@@ -690,7 +690,7 @@
         "fill-color": [
           "case",
           ["==", ["get", "ocean"], "water"],
-          "rgb(4, 19, 38)",
+          "rgb(0, 15, 34)",
           "rgba(0, 0, 0, 0)"
         ],
         "fill-antialias": false
@@ -723,7 +723,7 @@
         "line-color": [
           "case",
           ["!", ["has", "tunnel"]],
-          "rgb(4, 19, 38)",
+          "rgb(0, 15, 34)",
           ["has", "tunnel"],
           "rgb(4,19,38)",
           "rgba(0, 0, 0, 0)"
@@ -805,7 +805,7 @@
         "fill-color": [
           "case",
           ["==", ["get", "man_made"], "bridge"],
-          "rgb(24, 46, 64)",
+          "rgb(13, 32, 52)",
           "rgba(0, 0, 0, 0)"
         ],
         "fill-antialias": false
@@ -826,7 +826,7 @@
         "fill-color": [
           "case",
           ["==", ["get", "amenity"], "fountain"],
-          "rgb(41, 75, 69)",
+          "rgb(36, 70, 64)",
           "rgba(0, 0, 0, 0)"
         ],
         "fill-outline-color": [
@@ -961,7 +961,7 @@
             ["==", ["get", "highway"], "primary"],
             ["==", ["get", "highway"], "primary_link"]
           ],
-          "rgb(24, 46, 64)",
+          "rgb(13, 32, 52)",
           [
             "any",
             ["==", ["get", "highway"], "secondary"],
@@ -973,7 +973,7 @@
             ["==", ["get", "highway"], "tertiary"],
             ["==", ["get", "highway"], "tertiary_link"]
           ],
-          "rgb(24, 46, 64)",
+          "rgb(13, 32, 52)",
           ["==", ["get", "highway"], "unclassified"],
           "rgba(211, 207, 206, 1)",
           ["==", ["get", "highway"], "residential"],
@@ -2400,7 +2400,7 @@
           ],
           "rgb(22, 25, 28)",
           ["all", ["==", ["get", "highway"], "track"]],
-          "rgb(177, 140, 63)",
+          "rgb(0, 0, 0)",
           [
             "any",
             ["==", ["get", "highway"], "motorway"],
@@ -2448,7 +2448,7 @@
           ["==", ["get", "highway"], "raceway"],
           "rgba(255, 192, 203, 1)",
           ["==", ["get", "highway"], "track"],
-          "rgb(177, 140, 63)",
+          "rgb(0, 0, 0)",
           "rgba(0, 0, 0, 0)"
         ],
         "line-width": [
@@ -5554,9 +5554,8 @@
       "layout": { "visibility": "visible" },
       "paint": {
         "fill-antialias": false,
-        "fill-color": "rgba(29, 50, 68, 1)",
-        "fill-outline-color": "rgba(120, 65, 22, 1)",
-        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 13, 0, 13.5, 1]
+        "fill-color": "rgba(19, 40, 58, 1)",
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 15, 1]
       }
     },
     {
@@ -10632,7 +10631,7 @@
             ["==", ["get", "highway"], "pedestrian"],
             ["!=", ["get", "area"], "yes"]
           ],
-          "rgba(0, 0, 0, 0.5)",
+          "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "bridleway"],
           "rgb(68, 159, 66)",
           ["==", ["get", "highway"], "busway"],
@@ -10665,9 +10664,9 @@
               ["!=", ["get", "bicycle"], "designated"]
             ]
           ],
-          "rgba(0, 0, 0, 0.5)",
+          "rgba(0, 0, 0, 1)",
           ["all", ["==", ["get", "highway"], "track"]],
-          "rgba(0, 0, 0, 0.5)",
+          "rgba(0, 0, 0, 1)",
           [
             "any",
             ["==", ["get", "highway"], "motorway"],
@@ -10703,13 +10702,13 @@
           ["==", ["get", "highway"], "unclassified"],
           "rgb(0, 0, 0)",
           ["==", ["get", "highway"], "residential"],
-          "rgba(0, 0, 0, 0.5)",
+          "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "living_street"],
-          "rgba(0, 0, 0, 0.5)",
+          "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "service"],
-          "rgba(0, 0, 0, 0.5)",
+          "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "raceway"],
-          "rgba(0, 0, 0, 0.5)",
+          "rgba(0, 0, 0, 1)",
           "rgba(0, 0, 0, 0)"
         ],
         "line-width": [
@@ -12845,31 +12844,31 @@
             ["==", ["get", "railway"], "rail"],
             ["!", ["has", "service"]]
           ],
-          "rgb(51,72,87)",
+          "rgb(41,62,77)",
           ["all", ["==", ["get", "railway"], "rail"], ["has", "service"]],
-          "rgb(51,72,87)",
+          "rgb(41,62,77)",
           ["==", ["get", "railway"], "subway"],
-          "rgb(51,72,87)",
+          "rgb(41,62,77)",
           ["==", ["get", "railway"], "tram"],
-          "rgb(51,72,87)",
+          "rgb(41,62,77)",
           ["==", ["get", "railway"], "preserved"],
-          "rgb(51,72,87)",
+          "rgb(41,62,77)",
           ["==", ["get", "railway"], "funicular"],
-          "rgb(51,72,87)",
+          "rgb(41,62,77)",
           ["==", ["get", "railway"], "monorail"],
-          "rgb(51,72,87)",
+          "rgb(41,62,77)",
           ["==", ["get", "railway"], "light_rail"],
-          "rgb(51,72,87)",
+          "rgb(41,62,77)",
           ["==", ["get", "railway"], "construction"],
-          "rgb(51,72,87)",
+          "rgb(41,62,77)",
           ["==", ["get", "railway"], "abandoned"],
-          "rgb(51,72,87)",
+          "rgb(41,62,77)",
           ["==", ["get", "railway"], "disused"],
-          "rgb(51,72,87)",
+          "rgb(41,62,77)",
           ["==", ["get", "railway"], "miniature"],
-          "rgb(51,72,87)",
+          "rgb(41,62,77)",
           ["==", ["get", "railway"], "narrow_gauge"],
-          "rgb(51,72,87)",
+          "rgb(41,62,77)",
           "rgba(0, 0, 0, 0)"
         ],
         "line-width": [
@@ -15246,7 +15245,7 @@
           ],
           "rgb(22, 25, 28)",
           ["all", ["==", ["get", "highway"], "track"]],
-          "rgb(177, 140, 63)",
+          "rgb(0, 0, 0)",
           [
             "any",
             ["==", ["get", "highway"], "motorway"],
@@ -15284,7 +15283,7 @@
           ["==", ["get", "highway"], "living_street"],
           "rgb(213, 213, 213)",
           ["==", ["get", "highway"], "service"],
-          "rgba(0, 0, 0, 0.5)",
+          "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "track"],
           "rgb(159, 126, 57)",
           ["==", ["get", "highway"], "raceway"],
@@ -17516,9 +17515,9 @@
         "line-color": [
           "case",
           ["==", ["get", "aeroway"], "runway"],
-          "rgba(187, 187, 204, 1.0)",
+          "rgba(55, 65, 95, 1.0)",
           ["==", ["get", "aeroway"], "taxiway"],
-          "rgba(187, 187, 204, 1.0)",
+          "rgba(55, 65, 95, 1.0)",
           "rgba(0, 0, 0, 0)"
         ],
         "line-width": [
@@ -17672,6 +17671,7 @@
       "type": "line",
       "source": "baremaps",
       "source-layer": "boundary",
+      "minzoom": 0,
       "filter": [
         "all",
         ["==", ["geometry-type"], "LineString"],
@@ -17689,18 +17689,18 @@
         "line-color": [
           "case",
           ["==", ["get", "admin_level"], "0"],
-          "rgb(7, 155, 203)",
+          "rgb(150, 160, 170)",
           ["==", ["get", "admin_level"], "1"],
-          "rgb(7, 155, 203)",
+          "rgb(150, 160, 170)",
           ["==", ["get", "admin_level"], "2"],
-          "rgb(7, 155, 203)",
+          "rgb(150, 160, 170)",
           ["==", ["get", "admin_level"], "3"],
-          "rgb(7, 155, 203)",
+          "rgb(150, 160, 170)",
           ["==", ["get", "admin_level"], "4"],
-          "rgb(7, 155, 203)",
+          "rgb(150, 160, 170)",
           "rgba(0, 0, 0, 0)"
         ],
-        "line-dasharray": [4, 1, 1, 1]
+        "line-dasharray": [4, 2]
       }
     },
     {
@@ -17780,7 +17780,7 @@
       "type": "fill-extrusion",
       "source": "baremaps",
       "source-layer": "building",
-      "minzoom": 15,
+      "minzoom": 10,
       "filter": [
         "all",
         ["==", ["geometry-type"], "Polygon"],
@@ -17793,21 +17793,21 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          15,
+          10,
           0,
-          16,
+          11,
           ["get", "extrusion:base"]
         ],
         "fill-extrusion-height": [
           "interpolate",
           ["linear"],
           ["zoom"],
-          15,
+          10,
           0,
-          16,
+          11,
           ["get", "extrusion:height"]
         ],
-        "fill-extrusion-color": "rgba(19, 40, 58, 1)"
+        "fill-extrusion-color": "rgba(14, 35, 53, 1)"
       }
     },
     {
