@@ -949,7 +949,7 @@
             ["==", ["get", "highway"], "motorway"],
             ["==", ["get", "highway"], "motorway_link"]
           ],
-          "rgba(227, 82, 126, 1)",
+          "rgba(0, 0, 0, 1)",
           [
             "any",
             ["==", ["get", "highway"], "trunk"],
@@ -967,7 +967,7 @@
             ["==", ["get", "highway"], "secondary"],
             ["==", ["get", "highway"], "secondary_link"]
           ],
-          "rgba(154, 166, 67, 1)",
+          "rgba(0, 0, 0, 1)",
           [
             "any",
             ["==", ["get", "highway"], "tertiary"],
@@ -975,11 +975,11 @@
           ],
           "rgb(13, 32, 52)",
           ["==", ["get", "highway"], "unclassified"],
-          "rgba(211, 207, 206, 1)",
+          "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "residential"],
-          "rgba(211, 207, 206, 1)",
+          "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "living_street"],
-          "rgba(207, 207, 207, 1)",
+          "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "service"],
           "rgba(24, 46, 64, 1)",
           [
@@ -987,7 +987,7 @@
             ["==", ["get", "highway"], "pedestrian"],
             ["!=", ["geometry-type"], "Polygon"]
           ],
-          "rgba(184, 183, 182, 1)",
+          "rgba(0, 0, 0, 1)",
           "rgba(0, 0, 0, 0)"
         ],
         "line-width": [
@@ -2432,11 +2432,11 @@
           ],
           "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "unclassified"],
-          "rgba(242, 242, 242, 1)",
+          "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "residential"],
-          "rgba(211, 207, 206, 1)",
+          "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "living_street"],
-          "rgba(245, 245, 245, 1)",
+          "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "service"],
           "rgb(0, 0, 0)",
           [
@@ -2444,9 +2444,9 @@
             ["==", ["get", "highway"], "pedestrian"],
             ["!=", ["geometry-type"], "Polygon"]
           ],
-          "rgba(221, 221, 232, 1)",
+          "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "raceway"],
-          "rgba(255, 192, 203, 1)",
+          "rgba(0, 0, 0, 1)",
           ["==", ["get", "highway"], "track"],
           "rgb(0, 0, 0)",
           "rgba(0, 0, 0, 0)"
