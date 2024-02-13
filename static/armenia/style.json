@@ -7,7 +7,7 @@
   "sources": {
     "baremaps": {
       "type": "vector",
-      "url": "pmtiles:///armenia.pmtiles"
+      "url": "pmtiles:///https://sloy.io/armenia.pmtiles"
     }
   },
   "sprite": "https://baremaps.apache.org/sprites/osm/sprite",
