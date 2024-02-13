@@ -18,5 +18,9 @@
     Content-Encoding: gzip
     Cache-Control: public, max-age=2592000, immutable
 
+/*.pmtiles
+    Content-Encoding: gzip
+    Cache-Control: public, max-age=2592000, immutable
+
 /*
   Access-Control-Allow-Origin: *
