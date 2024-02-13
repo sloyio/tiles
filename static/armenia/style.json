@@ -5541,24 +5541,6 @@
       }
     },
     {
-      "id": "building",
-      "type": "fill",
-      "source": "baremaps",
-      "source-layer": "building",
-      "filter": [
-        "all",
-        ["==", ["geometry-type"], "Polygon"],
-        ["!=", ["get", "building"], "no"],
-        ["!=", ["get", "building:part"], "no"]
-      ],
-      "layout": { "visibility": "visible" },
-      "paint": {
-        "fill-antialias": false,
-        "fill-color": "rgba(19, 40, 58, 1)",
-        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 15, 1]
-      }
-    },
-    {
       "id": "highway_construction_line",
       "type": "line",
       "source": "baremaps",
@@ -17776,7 +17758,7 @@
       }
     },
     {
-      "id": "building-extrusion",
+      "id": "building",
       "type": "fill-extrusion",
       "source": "baremaps",
       "source-layer": "building",

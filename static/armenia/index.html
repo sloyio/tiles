@@ -50,7 +50,7 @@
 
 <body>
   <div id="map"></div>
-  <button class="download-selected">download selected</button>
+  <!-- <button class="download-selected">download selected</button> -->
   <script>
     // Initialize the map
     let map = new maplibregl.Map({
@@ -64,39 +64,38 @@
       zoom: 14,
     });
 
-    const selected = {};
+    // const selected = {};
 
-    document
-      .querySelector(".download-selected")
-      .addEventListener("click", () => {
-        const filename = "my_feature_collection.geojson";
-        downloadFeatureCollection(Object.values(selected), filename);
-      });
+    // document
+    //   .querySelector(".download-selected")
+    //   .addEventListener("click", () => {
+    //     const filename = "my_feature_collection.geojson";
+    //     downloadFeatureCollection(Object.values(selected), filename);
+    //   });
 
-    map.on("click", "building", function (e) {
-      // Получаем информацию о выбранном доме
-      const selectedBuilding = e?.features?. [0];
-      console.log(selectedBuilding);
-      if (selected[selectedBuilding.id]) {
-        delete selected[selectedBuilding.id];
-      } else {
-        selected[selectedBuilding.id] = selectedBuilding.toJSON();
-      }
-      const cases = ["case"];
-      for (let id in selected) {
-        console.log(id, selected);
-        cases.push(["==", ["id"], +id], "rgb(255, 0, 0)");
-      }
-      if (cases.length > 1) {
-        cases.push("#0c1021");
-        map.setPaintProperty("building", "fill-extrusion-color", cases);
-      } else {
-        map.setPaintProperty("building", "fill-extrusion-color", "#0c1021");
-      }
-    });
+    // map.on("click", "building", function (e) {
+    //   // Получаем информацию о выбранном доме
+    //   const selectedBuilding = e?.features?. [0];
+    //   console.log(selectedBuilding);
+    //   if (selected[selectedBuilding.id]) {
+    //     delete selected[selectedBuilding.id];
+    //   } else {
+    //     selected[selectedBuilding.id] = selectedBuilding.toJSON();
+    //   }
+    //   const cases = ["case"];
+    //   for (let id in selected) {
+    //     console.log(id, selected);
+    //     cases.push(["==", ["id"], +id], "rgb(255, 0, 0)");
+    //   }
+    //   if (cases.length > 1) {
+    //     cases.push("#0c1021");
+    //     map.setPaintProperty("building", "fill-extrusion-color", cases);
+    //   } else {
+    //     map.setPaintProperty("building", "fill-extrusion-color", "#0c1021");
+    //   }
+    // });
 
-    const viewbox =
-    "43.32,38.79,46.72,41.36"; // Координаты границ квадрата (западная, северная, восточная, южная точки)
+    const viewbox = "43.32,38.79,46.72,41.36"; // Координаты границ квадрата (западная, северная, восточная, южная точки)
 
     var geocoder_api = {
       forwardGeocode: async (config) => {
@@ -141,6 +140,7 @@
         };
       },
     };
+
     map.addControl(
       new MaplibreGeocoder(geocoder_api, {
         maplibregl: maplibregl,
@@ -163,30 +163,52 @@
       })
     );
 
-    function downloadFeatureCollection(features, filename) {
-      const featureCollection = {
-        type: "FeatureCollection",
-        features: features,
-      };
+    // function downloadFeatureCollection(features, filename) {
+    //   const featureCollection = {
+    //     type: "FeatureCollection",
+    //     features: features,
+    //   };
 
-      const geojsonString = JSON.stringify(featureCollection);
+    //   const geojsonString = JSON.stringify(featureCollection);
 
-      const blob = new Blob([geojsonString], {
-        type: "application/json"
-      });
-      const url = URL.createObjectURL(blob);
+    //   const blob = new Blob([geojsonString], {
+    //     type: "application/json"
+    //   });
+    //   const url = URL.createObjectURL(blob);
 
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = filename;
+    //   const link = document.createElement("a");
+    //   link.href = url;
+    //   link.download = filename;
 
-      document.body.appendChild(link);
-      link.click();
+    //   document.body.appendChild(link);
+    //   link.click();
 
-      document.body.removeChild(link);
-      URL.revokeObjectURL(url);
-    }
+    //   document.body.removeChild(link);
+    //   URL.revokeObjectURL(url);
+    // }
   </script>
 </body>
 
 </html>
+
+<!-- 
+  removed:
+   {
+      "id": "building",
+      "type": "fill",
+      "source": "baremaps",
+      "source-layer": "building",
+      "filter": [
+        "all",
+        ["==", ["geometry-type"], "Polygon"],
+        ["!=", ["get", "building"], "no"],
+        ["!=", ["get", "building:part"], "no"]
+      ],
+      "layout": { "visibility": "visible" },
+      "paint": {
+        "fill-antialias": false,
+        "fill-color": "rgba(19, 40, 58, 1)",
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 15, 1]
+      }
+    },
+ -->
