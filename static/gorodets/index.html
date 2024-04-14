@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="The platform for aggregating, visualizing and exploring geodata"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sloy.io/gorodets" />
+    <meta property="og:title" content="Geoportal of gorodets · Sloy" />
+    <meta
+      property="og:description"
+      content="The platform for aggregating, visualizing and exploring geodata"
+    />
+    <meta property="og:image" content="sloy-opengraph-en.jpg" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sloy.io/gorodets" />
+    <meta property="twitter:title" content="Geoportal of gorodets · Sloy" />
+    <meta
+      property="twitter:description"
+      content="The platform for aggregating, visualizing and exploring geodata"
+    />
+    <meta property="twitter:image" content="sloy-opengraph-en.jpg" />
+
+    <link rel="icon" href="/static/gorodets/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/gorodets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/gorodets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/static/gorodets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/static/gorodets/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/static/gorodets/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      sizes="any"
+      href="/static/gorodets/favicon.svg"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="dns-prefetch" href="https://tiles.baremaps.com/" />
+    <link rel="dns-prefetch" href="https://cartography-zeta.vercel.app/" />
+    <title>Геопортал Городца · Sloy</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      iframe {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe
+      src="https://sloy-map.netlify.app/iframe.html?args=&id=map-advanced-gorodets--default"
+      frameborder="0"
+    ></iframe>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(96504773, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/96504773"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+</html>
